@@ -1,4 +1,3 @@
-// Latihan 13.1 — Implementasi Stack menggunakan array
 class Stack {
   constructor() {
     this.items = [];
@@ -17,18 +16,18 @@ class Stack {
   }
 }
 
-// Demo dasar push/pop/peek
+
 const stack = new Stack();
 stack.push("A");
 stack.push("B");
 stack.push("C");
 
-console.log("13.1 Peek (paling atas):", stack.peek());
-console.log("13.1 Pop:", stack.pop());
-console.log("13.1 Peek setelah pop:", stack.peek());
-console.log("13.1 Is empty?", stack.isEmpty());
+console.log("Peek (paling atas):", stack.peek());
+console.log("Pop:", stack.pop());
+console.log("Peek setelah pop:", stack.peek());
+console.log("Is empty?", stack.isEmpty());
 
-// Latihan 13.2 — Search history dengan Stack + fitur undo search
+
 const searchHistory = new Stack();
 
 function performSearch(keyword) {
