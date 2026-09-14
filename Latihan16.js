@@ -21,14 +21,14 @@ function binarySearchCount(arr, target) {
   return steps;
 }
 
-// Generate 10.000 angka terurut
+
 const bigArray = Array.from({ length: 10000 }, (_, i) => i);
-const target = 9999; // sengaja dipilih di akhir, kasus terburuk buat linear
+const target = 9999; 
 
 console.log("Linear search steps:", linearSearchCount(bigArray, target));
 console.log("Binary search steps:", binarySearchCount(bigArray, target));
 
-// Latihan 16.2 — Nested loop O(n²) vs Map-based grouping O(n)
+
 function generateProducts(size) {
   const dataset = [];
   for (let i = 1; i <= size; i++) {
@@ -39,7 +39,7 @@ function generateProducts(size) {
 
 const testProducts = generateProducts(1000);
 
-// Pendekatan nested loop (O(n²))
+
 const startNested = performance.now();
 let pairCount = 0;
 for (let i = 0; i < testProducts.length; i++) {
@@ -51,7 +51,7 @@ for (let i = 0; i < testProducts.length; i++) {
 }
 const endNested = performance.now();
 
-// Pendekatan grouping berbasis Map (O(n))
+
 const startMap = performance.now();
 const groupMap = new Map();
 for (const p of testProducts) {
